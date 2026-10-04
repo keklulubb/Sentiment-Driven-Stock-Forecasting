@@ -2,8 +2,9 @@ from newsapi import NewsApiClient
 import pandas as pd
 from datetime import datetime, timedelta
 import time
+import os
 
-newsapi = NewsApiClient(api_key='e59366a012b34dd283753fd40c81f7c7')
+newsapi = NewsApiClient(api_key=os.environ["NEWSAPI_KEY"])
 
 
 tickers = {

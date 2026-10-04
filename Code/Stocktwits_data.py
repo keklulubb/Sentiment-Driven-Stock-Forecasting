@@ -4,9 +4,10 @@ import pandas as pd
 from textblob import TextBlob
 from datetime import datetime
 import time
+import os
 
 #api key for alpha vantage stock info
-API_KEY = "9BHS3YUMT2RNCZ3F"  # Alpha Vantage key
+API_KEY = os.environ["ALPHAVANTAGE_KEY"]  # Alpha Vantage key
 BASE_URL = "https://www.alphavantage.co/query"
 
 #our meme stocks chosen by team
